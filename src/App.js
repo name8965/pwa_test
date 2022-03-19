@@ -24,7 +24,7 @@ function App() {
   const [Token, setToken] = useState(null);
   console.log("getToken");
 
-  //pwa 알림
+  //pwa 알림 토큰 받기
   getToken(messaging, {
     vapidKey: process.env.REACT_APP_VAPID_KEY,
   }).then((token) => {
